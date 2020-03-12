@@ -8,9 +8,9 @@
 * 設定個人資訊(config)
     * 每次在commit都會記錄作者訊息(Name與Email)
 
-        `git config --global user.name "<你的名字>"`
+        `git config --global user.name "你的名字"`
 
-        `git config --global user.email "<你的Mail>"`
+        `git config --global user.email "你的Mail"`
     * 查看個人設定
 
         `git config --global --list`
@@ -20,16 +20,16 @@
 * 新增文件管理(add)
     * 新增文件
 
-        `git add <檔名>`
+        `git add 檔名`
     * 一次新增所有文件
 
         `git add .`
 * 提交變更(commit)
 
-    `git commit -m "<變更資訊>"`
+    `git commit -m "變更資訊"`
 * 修改變更(amend)
 
-    `git commit --amend -m "<變更資訊>"`
+    `git commit --amend -m "變更資訊"`
 ## 記錄操作
 * 查看記錄(log)
 
@@ -46,3 +46,13 @@
 * 查看unstaged & staged，在最後加入 HEAD
 
     `git diff HEAD`
+## 返回(reset)
+* 從staged返回至Modifed
+
+    `git reset <檔名>`
+* 從staged返回至Modifed，加入hard參數，HEAD~後數字是要返回到幾個，1 -> 返回前一個HEAD
+
+    `git reset --hard HEAD~<數字>`
+* 從staged返回至Modifed，加入hard參數再加入commit ID
+
+    `git reset --hard <提交ID>`
