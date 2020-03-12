@@ -63,12 +63,17 @@
 
 ## 分支
 * 建立分支
+
     `git branch <分支名>`
 * 切換分支
+
     `git checkout <分支名>`
 * 刪除分支，加入d參數
+
     `git branch -d <分支名>`
 * 建立&切換分支
+
     `git checkout -b <分支名>`
 * 合併分支
+
     `git merge -m "合併訊息"`
