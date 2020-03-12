@@ -27,6 +27,8 @@
 * 提交變更(commit)
 
     `git commit -m "<變更資訊>"`
+* 修改變更(amend)
+    `git commit --amend -m "<變更資訊>"`
 ## 記錄操作
 * 查看記錄(log)
     `git log`
