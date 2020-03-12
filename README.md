@@ -6,7 +6,7 @@
 - [分支](#分支)
 ## 建立版本管理庫
 * 設定個人資訊(config)
-    * 每次在Git commit都會記錄作者訊息(Name與Email)
+    * 每次在commit都會記錄作者訊息(Name與Email)
 
         `git config --global user.name "<你的名字>"`
 
