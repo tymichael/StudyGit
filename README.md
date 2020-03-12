@@ -4,6 +4,7 @@
 - [記錄操作](#記錄操作)
 - [提交返回](#提交返回)
 - [分支](#分支)
+- [參考](#參考)
 ## 建立版本管理庫
 * 設定個人資訊(config)
     * 每次在commit都會記錄作者訊息(Name與Email)
@@ -31,6 +32,7 @@
 
     `git commit --amend -m "變更訊息"`
 ## 記錄操作
+![GITHUB](./lifecycle.png "紀錄變更到版本庫")
 * 查看記錄(log)
 
     `git log`
@@ -77,3 +79,7 @@
 * 合併分支
 
     `git merge -m "合併訊息"`
+
+## 參考
+* Git: https://git-scm.com/
+* 莫凡Git 版本管理: https://morvanzhou.github.io/tutorials/others/git/
