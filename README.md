@@ -8,9 +8,9 @@
 * 設定個人資訊(config)
     * 每次在Git commit都會記錄作者訊息(Name與Email)
 
-    `git config --global user.name "<你的名字>"`
+        `git config --global user.name "<你的名字>"`
 
-    `git config --global user.email "<你的Mail>"`
+        `git config --global user.email "<你的Mail>"`
     * 查看個人設定
 
         `git config --global --list`
