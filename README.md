@@ -26,5 +26,5 @@
         `git add .`
 * 提交變更(commit)
 
-    `git commit -m "<改變資訊>"`
+    `git commit -m "<變更資訊>"`
 ##
