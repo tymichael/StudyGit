@@ -28,15 +28,21 @@
 
     `git commit -m "<變更資訊>"`
 * 修改變更(amend)
+
     `git commit --amend -m "<變更資訊>"`
 ## 記錄操作
 * 查看記錄(log)
+
     `git log`
 * 查看工作目錄下所有檔案情況，Project、modified、untracked、new file，最後參數s是用最簡潔方式印出結果
+
     `git status -s`
 * 查看尚未add(unstaged)的修改部分
+
     `git diff`
 * 查看已add(staged)，但未commit，在最後加入參數cached
+
     `git diff --cached`
 * 查看unstaged & staged，在最後加入 HEAD
+
     `git diff HEAD`
