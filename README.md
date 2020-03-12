@@ -26,10 +26,10 @@
         `git add .`
 * 提交變更(commit)
 
-    `git commit -m "變更資訊"`
+    `git commit -m "變更訊息"`
 * 修改變更(amend)
 
-    `git commit --amend -m "變更資訊"`
+    `git commit --amend -m "變更訊息"`
 ## 記錄操作
 * 查看記錄(log)
 
@@ -56,3 +56,19 @@
 * 從staged返回至Modifed，加入hard參數再加入commit ID
 
     `git reset --hard <提交ID>`
+
+* 查看所有commit資訊
+
+    `git reflog`
+
+## 分支
+* 建立分支
+    `git branch <分支名>`
+* 切換分支
+    `git checkout <分支名>`
+* 刪除分支，加入d參數
+    `git branch -d <分支名>`
+* 建立&切換分支
+    `git checkout -b <分支名>`
+* 合併分支
+    `git merge -m "合併訊息"`
