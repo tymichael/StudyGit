@@ -36,6 +36,10 @@
 * 查看記錄(log)
 
     `git log`
+
+* 查看記錄(log)，加入oneline與graph參數可以印出最簡潔與圖形化結果
+
+    `git log --oneline -graph`
 * 查看工作目錄下所有檔案情況，Project、modified、untracked、new file，最後參數s是用最簡潔方式印出結果
 
     `git status -s`
