@@ -41,7 +41,7 @@
 
 ![GITHUB](./lifecycle.png "紀錄變更到版本庫")
 
-    每個文件都會有兩種狀態分別是追蹤Tracked和Untracked。Tracked文件，可以是Unmodified、Modified、或Staged(已儲存至版本庫)；Untracked文件，就是不在git紀錄的資料夾內。簡單說Tracked文件是Git知道的文件，Untracked文件則是相反。在編輯文件時，Git會視為Modified，當你下git add指令就會將狀態改變為Staged(已儲存至版本庫)，你提交(commit)修改之後，狀態會再回Unmodified，然後會重複該流程
+每個文件都會有兩種狀態分別是追蹤Tracked和Untracked。Tracked文件，可以是Unmodified、Modified、或Staged(已儲存至版本庫)；Untracked文件，就是不在git紀錄的資料夾內。簡單說Tracked文件是Git知道的文件，Untracked文件則是相反。在編輯文件時，Git會視為Modified，當你下git add指令就會將狀態改變為Staged(已儲存至版本庫)，你提交(commit)修改之後，狀態會再回Unmodified，然後會重複該流程
 
 * 查看記錄(log)
 
@@ -80,7 +80,7 @@
 ## 分支(branch)
 ![GITHUB](./branch.png "分支")
 
-    在開發軟體時，可能會有多人合作開發同種功能，所以會有多個軟體版本，而Git分支是用來維護這狀況。簡單來說，主分支Master就是軟體完美穩定的版本要給客戶的，而Branch 2可能是用來開發版本，會將所以開發Commit會放在第一個分支版本以外，而第一個分支版本是繼承主分支Master版本，而主分支Master是不會受影響的，然後開發完成也可以合併到Master成為下個主程式分支版本。
+在開發軟體時，可能會有多人合作開發同種功能，所以會有多個軟體版本，而Git分支是用來維護這狀況。簡單來說，主分支Master就是軟體完美穩定的版本要給客戶的，而Branch 2可能是用來開發版本，會將所以開發Commit會放在第一個分支版本以外，而第一個分支版本是繼承主分支Master版本，而主分支Master是不會受影響的，然後開發完成也可以合併到Master成為下個主程式分支版本。
 
 * 建立分支
 
