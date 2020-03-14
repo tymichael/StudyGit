@@ -4,6 +4,7 @@
 - [記錄操作](#記錄操作)
 - [提交返回](#提交返回)
 - [分支](#分支)
+- [遠端操作](#遠端合作)
 - [參考](#參考)
 ## 建立版本管理庫
 * 設定個人資訊(config)
@@ -36,16 +37,13 @@
 
     `git clone <專案URL>`
 
-* 
+
+
 ## 記錄操作
-**下圖為Git流程圖**
-* 每個文件都會有兩種狀態分別是追蹤Tracked和Untracked
-    * Tracked文件，可以是Unmodified、Modified、或Staged(已儲存至版本庫)
-    * Untracked文件，就是不在git紀錄的資料夾內
-    * 簡單說Tracked文件是Git知道的文件，Untracked文件則是相反
-    * 在編輯文件時，Git會視為Modified，當你下git add指令就會將狀態改變為Staged(已儲存至版本庫)，你可以提交(commit)修改，狀態會再回Unmodified，然後會重複該流程
 
 ![GITHUB](./lifecycle.png "紀錄變更到版本庫")
+    每個文件都會有兩種狀態分別是追蹤Tracked和Untracked。Tracked文件，可以是Unmodified、Modified、或Staged(已儲存至版本庫)；Untracked文件，就是不在git紀錄的資料夾內。簡單說Tracked文件是Git知道的文件，Untracked文件則是相反。在編輯文件時，Git會視為Modified，當你下git add指令就會將狀態改變為Staged(已儲存至版本庫)，你提交(commit)修改之後，狀態會再回Unmodified，然後會重複該流程
+
 * 查看記錄(log)
 
     `git log`
@@ -80,7 +78,10 @@
 
     `git reflog`
 
-## 分支
+## 分支(branch)
+![GITHUB](./branch.png "分支")
+    在開發軟體時，可能會有多人合作開發同種功能，所以會有多個軟體版本，而Git分支是用來維護這狀況。簡單來說，主分支Master就是軟體完美穩定的版本要給客戶的，而Branch 2可能是用來開發版本，會將所以開發Commit會放在第一個分支版本以外，而第一個分支版本是繼承主分支Master版本，而主分支Master是不會受影響的，然後開發完成也可以合併到Master成為下個主程式分支版本。
+
 * 建立分支
 
     `git branch <分支名>`
@@ -96,6 +97,29 @@
 * 合併分支
 
     `git merge -m "合併訊息"`
+
+## 遠端操作(Remote)
+    Git利用遠端來進行專案管理(新增或移除遠端版本庫)、將修改推送(push)至遠端版本庫、從遠端版本庫拉取(pull)資料
+
+* 列出遠端版本庫
+    
+    `git remote -v`
+* 新增遠端版本庫
+    
+    `git remote add <簡稱> <URL>`
+* 移除遠端版本庫
+
+    `git remote rm <簡稱>`
+* 重新命名遠端
+
+    `git remote rename <舊簡稱> <新簡稱>`
+* 從遠端拉取(fetch、pull)，fetch是將遠端版本庫資料拉取下來但不會合併，pull則是會合併，如果有選擇合併哪個分支可以選擇fetch會比較方便
+    
+    `git fetch`
+
+    `git fetch origin <分支>:<要拉取到放在的分支>`
+
+    `git pull`
 
 ## 參考
 * Git: https://git-scm.com/
