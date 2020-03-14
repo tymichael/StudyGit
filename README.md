@@ -31,7 +31,20 @@
 * 修改變更(amend)
 
     `git commit --amend -m "變更訊息"`
+
+* 下載Git上的專案(Clone)，專案URL有SSH、HTTP
+
+    `git clone <專案URL>`
+
+* 
 ## 記錄操作
+**下圖為Git流程圖**
+* 每個文件都會有兩種狀態分別是追蹤Tracked和Untracked
+    * Tracked文件，可以是Unmodified、Modified、或Staged(已儲存至版本庫)
+    * Untracked文件，就是不在git紀錄的資料夾內
+    * 簡單說Tracked文件是Git知道的文件，Untracked文件則是相反
+    * 在編輯文件時，Git會視為Modified，當你下git add指令就會將狀態改變為Staged(已儲存至版本庫)，你可以提交(commit)修改，狀態會再回Unmodified，然後會重複該流程
+
 ![GITHUB](./lifecycle.png "紀錄變更到版本庫")
 * 查看記錄(log)
 
