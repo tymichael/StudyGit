@@ -37,8 +37,6 @@
 
     `git clone <專案URL>`
 
-
-
 ## 記錄操作
 
 ![GITHUB](./lifecycle.png "紀錄變更到版本庫")
